@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>Design Button</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="https://unpkg.com/tachyons/css/tachyons.min.css" rel="stylesheet">
+  <body class="relative sans-serif">
+    <div class="flex-ns">
+      <section class="dt order-1-ns vh-100-ns vh-50 w-100 w-50-ns">
+        <div class="dtc tc v-mid">
+          <button class="js-button b--black ba bg-black f5 lh-solid ph3 pointer pv2 white" type="button">Button</button>
+        </div>
+      </section>
+
+      <section class="js-output absolute bg-white dn right-0-ns top-0 vh-100-ns vh-50 w-100 w-50-ns">
+        <div class="h-100 pa4-l ph3 pv4 relative">
+          <h1 class="b db f7 mb2 tracked ttu">CSS</h1>
+          <pre class="b--black ba code db gray h-50 h-auto-l mb3 pa2 pre w-100"><code class="js-code"></code></pre>
+          <a class="js-back-link black dim" href="#">Back to preview</a>
+        </div>
+      </section>
+
+      <form class="bg-black pa4-l order-0-ns overflow-y-scroll ph3 pv4 vh-100-ns vh-50 w-50-ns white">
+        <div class="mb3">
+          <label class="db f7 mb2 tracked ttu" for="textContent">Text content</label>
+          <input class="b--white ba bg-black pa2 w-100 white" id="textContent" placeholder="Button" type="text">
+        </div>
+
+        <div class="mb3">
+          <label class="db f7 mb2 tracked ttu" for="textColor">Text color</label>
+          <input class="b--white ba bg-black pa2 w-100 white" id="textColor" placeholder="ffffff" type="text">
+        </div>
+
+        <div class="mb3">
+          <label class="db f7 mb2 tracked ttu" for="backgroundColor">Background color</label>
+          <input class="b--white ba bg-black pa2 w-100 white" id="backgroundColor" placeholder="000000" type="text">
+        </div>
+
+        <div class="mb3">
+          <label class="db f7 mb2 tracked ttu" for="fontFamily">Font family</label>
+          <select class="b--white ba bg-black overflow-y-hidden pa2 w-100 white" id="fontFamily" multiple size="6">
+            <option value="Arial">Arial</option>
+            <option value="'Century Gothic', CenturyGothic, AppleGothic, sans-serif">Century Gothic</option>
+            <option value="'Helvetica Neue', Helvetica, Arial, sans-serif">Helvetica</option>
+            <option selected value="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif">
+              System
+            </option>
+            <option value="Tahoma">Tahoma</option>
+            <option value="Verdana">Verdana</option>
+          </select>
+        </div>
+
+        <div class="mb3">
+          <label class="db f7 mb2 tracked ttu" for="fontSize">Font size (px)</label>
+          <input class="b--white ba bg-black pa2 w-100 white" id="fontSize" placeholder="16" type="text">
+        </div>
+
+        <div class="mb3">
+          <label class="db f7 mb2 tracked ttu" for="borderColor">Border color</label>
+          <input class="b--white ba bg-black pa2 w-100 white" id="borderColor" placeholder="000000" type="text">
+        </div>
+
+        <div class="mb3">
+          <label class="db f7 mb2 tracked ttu" for="borderWidth">Border width (PX)</label>
+          <input class="b--white ba bg-black pa2 w-100 white" id="borderWidth" placeholder="1" type="text">
+        </div>
+
+        <div class="mb3">
+          <label class="js-border-radius-label db f7 mb2 tracked ttu" for="borderRadius">Border radius</label>
+          <input class="white w-100" id="borderRadius" max="100" min="0" type="range" value="0">
+        </div>
+
+        <div class="mb3">
+          <label class="db f7 mb2 tracked ttu" for="paddingY">Vertical padding (PX)</label>
+          <input class="b--white ba bg-black pa2 w-100 white" id="paddingY" placeholder="8" type="text">
+        </div>
+
+        <div class="mb3">
+          <label class="db f7 mb2 tracked ttu" for="paddingX">Horizontal padding (PX)</label>
+          <input class="b--white ba bg-black pa2 w-100 white" id="paddingX" placeholder="16" type="text">
+        </div>
+
+        <button class="js-submit-button b--white ba bg-transparent dib dim f6 mb5 ph4 pointer pv3 white" type="text">View code</button>
+
+        <div class="db">
+          <a class="mr2 pink white" href="https://github.com/frekyll/design-button">GitHub</a>
+          <a class="mr2 pink white" href="https://frekyll.com">Made by Frekyll</a>
+        </div>
+      </form>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
